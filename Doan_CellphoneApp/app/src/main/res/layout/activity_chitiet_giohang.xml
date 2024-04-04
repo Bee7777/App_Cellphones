@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"
+    tools:context=".MAIN.chitiet_giohang">
+
+    <ImageView
+        android:id="@+id/imghinhgiohang"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="2dp"
+        android:src="@drawable/iphone_15_plus_128gb_den"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tvtengiohang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:text="IPHONE"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        android:layout_toRightOf="@id/imghinhgiohang"/>
+
+    <TextView
+        android:id="@+id/dongia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="10.000.000VND"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        android:layout_below="@id/tvtengiohang"
+        android:layout_toRightOf="@id/imghinhgiohang"/>
+
+</RelativeLayout>

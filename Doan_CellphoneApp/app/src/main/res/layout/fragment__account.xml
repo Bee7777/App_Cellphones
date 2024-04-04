@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FRAGMENT.Fragment_account"
+    android:background="@color/green2">
+<!--    android:background="@drawable/login_background"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_gravity="center"-->
+<!--    android:padding="16dp">-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="BEE Phone"
+            android:textSize="60dp"
+            android:textColor="@color/white"
+            android:textStyle="normal|bold|italic"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đánh thức bản lĩnh trong bạn"
+           android:layout_marginBottom="50dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginLeft="90dp"/>
+
+        <ImageView
+            android:layout_marginLeft="175dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/baseline_account_circle_24"/>
+
+        <EditText
+            android:id="@+id/username1"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tài Khoản:"
+            android:textColor="@color/white"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:background="@drawable/rounded_coner"
+            android:padding="18dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/password1"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật Khẩu:"
+            android:textColor="@color/white"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:background="@drawable/rounded_coner"
+            android:padding="18dp"
+            android:inputType="textPassword"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng Nhập"
+            android:textColor="@color/black"
+            android:padding="18dp"
+            android:layout_marginTop="32dp"
+            android:textSize="20dp"
+            android:background="@drawable/layout_custom_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên mật khẩu?"
+            android:textColor="@color/white"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="150dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/fb"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/fb"/>
+            <ImageView
+                android:id="@+id/gg"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/gg"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+        
+
+
+</LinearLayout>

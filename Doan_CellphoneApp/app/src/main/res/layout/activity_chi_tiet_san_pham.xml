@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MAIN.ChiTietSanPham"
+    android:padding="10dp">
+    
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.nex3z.notificationbadge.NotificationBadge
+            android:id="@+id/menu_soluong"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="350dp"/>
+
+        <ImageView
+            android:layout_marginLeft="320dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_shopping_cart_25"/>
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/chitietIcon"
+        android:button="@drawable/custtom_checkbox_chitiet"/>
+
+
+    <ImageView
+        android:id="@+id/imgChitietDT"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/iphone_15_plus_128gb_den" />
+    <TextView
+        android:id="@+id/tvChitietTenDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên sản phẩm:"
+        android:layout_below="@id/imgChitietDT"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+    
+
+    <TextView
+        android:id="@+id/tvGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvChitietTenDT"
+        android:layout_marginTop="5dp"
+        android:text="100.000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/holo_red_light"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnchitietCong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvGia"
+        android:background="@drawable/custtom_chitietsanpham2"
+        android:text="+"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/tvchitietSo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/btnchitietCong"
+        android:layout_below="@id/tvGia"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnchitietTru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvGia"
+        android:background="@drawable/custtom_chitietsanpham2"
+        android:text="-"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:layout_toRightOf="@id/tvchitietSo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnchitietThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvGia"
+        android:background="@drawable/custtom_chitietsanpham2"
+        android:text="Thêm"
+        android:textSize="25dp"
+        android:layout_toRightOf="@id/btnchitietTru"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+
+    <TextView
+        android:id="@+id/tvchitietNoiban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnchitietThem"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="9dp"
+        android:text="Nơi bán:"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tvchitietMau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Màu:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@id/tvchitietNoiban"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvchitietMotaDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mô tả điện thoại:"
+        android:textSize="20dp"
+        android:textStyle="italic|normal"
+        android:layout_below="@id/tvchitietMau"
+        android:layout_marginTop="10dp" />
+
+    <RatingBar
+        android:layout_below="@+id/tvchitietMotaDT"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="90dp"
+        android:outlineAmbientShadowColor="@color/black"/>
+
+
+
+</RelativeLayout>
